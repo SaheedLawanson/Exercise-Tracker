@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Tracker</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Exercise Tracker</h1>
+        </div>
+
+        <div id="body">
+            <div id="user" class="green-form">
+                <p id=user-title class=form-title>Create new user</p>
+                <form id="user-form" action="api/users" method="post">
+                    <input id=user-text-id class=text type="text" name="username" placeholder="username">
+                    <input id=user-submit class=submit type="submit">
+                </form>
+            </div>
+
+            <div id="exercises" class="green-form">
+                <p id=exercise-title class=form-title>Add exercises</p>
+                <form id="exercise-form" method="post">
+                    <input id=user-text-id-for class=text type="text" name="userId" placeholder=":_id">
+                    <input id=exercise-text-desc class=text type="text" name="description" placeholder="description*">
+                    <input id=exercise-text-duration class=text type="text" name="duration" placeholder="duration* (mins)">
+                    <input id=exercise-text-date class=text type="text" name="date" placeholder="date (yyyy-mm-dd)">
+                    <input id=exercise-submit class=submit type="submit">
+                </form>
+                <script>
+                    let form = document.getElementById('exercise-form')
+                    form.addEventListener('submit', () => {
+                        let userId = document.getElementById('user-text-id-for').value
+                        form.action = `api/users/${userId}/exercises`
+                        form.submit()
+                    })
+                </script>
+
+            </div>
+        </div>
+
+        <div id="bottom"></div>
+    </div>
+</body>
+</html>
