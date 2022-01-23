@@ -72,11 +72,11 @@ To get a local copy up and running, follow these simple steps:
 
 - Clone the repo: git clone https://github.com/SaheedLawanson/URL-Shortener.git
 
-- Install node: run in cmd ```npm install node```
+- Install node: Open cmd in the project root folder ```npm install node```
 
 - Install dependencies: ```npm install```
 
-- Open cmd in the project root folder and run ```node index.js```
+- Run in cmd: ```node index.js```
 
 - On your preferred browser, visit "localhost:3000"
 
