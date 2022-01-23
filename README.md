@@ -62,13 +62,13 @@ routes:
 To get a local copy up and running, follow these simple steps:
 
 
-# Prerequisites
+## Prerequisites
 
 - npm
 
 
 
-# Installation & Usage
+## Installation & Usage
 
 - Clone the repo: git clone https://github.com/SaheedLawanson/URL-Shortener.git
 
