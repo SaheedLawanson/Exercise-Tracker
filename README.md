@@ -1,4 +1,4 @@
-About the project
+# About the project
 
 This goal of this project is to hold and return information about certain users 
 who have been added to the database through some forms the home page (root) contains
@@ -42,7 +42,7 @@ routes:
 
 
 
-Built with
+# Built with
 
 - Node.js
 
@@ -57,18 +57,18 @@ Built with
 
 
 
-Getting Started 
+# Getting Started 
 
 To get a local copy up and running, follow these simple steps:
 
 
-Prerequisites
+# rerequisites
 
 - npm
 
 
 
-Installation & Usage
+# Installation & Usage
 
 - Clone the repo: git clone https://github.com/SaheedLawanson/URL-Shortener.git
 
